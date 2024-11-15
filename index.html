@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STALKER Section</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <nav class="nav-container">
+            <!-- Left items -->
+            <div class="nav-left">
+                <a href="#about">About</a>
+                <a href="#memes">Wall of Meme</a>
+            </div>
+
+            <!-- Center Icon -->
+            <div class="nav-center">
+                <img src="./logo1.webp" alt="Radiation Icon" class="nav-icon">
+            </div>
+
+            <!-- Right items -->
+            <div class="nav-right">
+                <button id="music-toggle" class="music-button">
+                    <img src="./speaker-on.png" alt="Sound Icon" id="sound-icon">
+                </button>
+                <a href="#buy" class="buy-button">Buy</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="quote-box">
+            <p>What is freedom? – ... that's what I'm talking about... <br><span class="hashtag">$STLK</span></p>
+        </div>
+        <div class="icon-box">
+            <a href="https://t.me" target="_blank" class="icon-button">
+                <img src="./telegram (1).png" alt="Telegram" class="icon">
+            </a>
+            <a href="https://your-link-here.com" target="_blank" class="icon-button">
+                <img src="./dex.png" alt="Wolf" class="icon">
+            </a>
+        </div>
+        
+    </section>
+
+    <section class="stlk-container" id='about'>
+        <h2 class="stlk-title">$STLK</h2>
+        <div class="stlk-content">
+            <img src="./about.webp" alt="Image" class="stlk-image">
+            <p class="stlk-text">
+                <strong>S.T.A.L.K.E.R. 2</strong> is more than just a post-apocalyptic survival game—it's a deeply humanized experience that places players in a hauntingly immersive world where every character, decision, and environment feels alive. The game doesn’t merely focus on combat and exploration but delves into the emotions, fears, and aspirations of the people surviving in "The Zone."
+            </p>
+        </div>
+    </section>
+
+
+    <section class="wall-of-meme" id='memes'>
+        <h2 class="meme-title">Wall of Meme</h2>
+        <div class="meme-images">
+            <img src="./meme.jpg" alt="Meme 1" class="meme-image">
+            <img src="./meme 2.jpg_large" alt="Meme 2" class="meme-image">
+            <img src="./meme 3.webp" alt="Meme 3" class="meme-image">
+        </div>
+    </section>
+    
+    
+    
+
+    <!-- Audio Player (Hidden) -->
+    <audio id="background-music" src="./music.mp3" loop></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

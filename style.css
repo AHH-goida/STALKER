@@ -1,0 +1,272 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Audiowide', sans-serif;
+    background-color: #0D2122;
+    color: #F0A500;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #0D2122;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Left Navigation */
+.nav-left {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-left a {
+    text-decoration: none;
+    color: #F0A500;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-left a:hover {
+    color: #FFD700;
+}
+
+/* Center Icon */
+.nav-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-icon {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Right Navigation */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Music Button Styling */
+.music-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.music-button img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.music-button:hover img {
+    transform: scale(1.2);
+}
+
+/* Buy Button Styling */
+.buy-button {
+    background-color: #FFFFFF;
+    color: #0D2122;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #F0A500;
+    color: #FFFFFF;
+}
+
+/* Hero Section Styling */
+.hero-section {
+    height: 1080px;
+    width: 100%;
+    background: url('./main.webp') no-repeat center center / cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 100px;
+}
+
+/* Quote Box Styling */
+.quote-box {
+    position: absolute; /* Position relative to the page */
+    top: calc(200px + 400px); /* 200px for navbar + 400px indent */
+    left: 150px; /* 150px indent from the left */
+    background-color: #143233; /* Semi-transparent background */
+    padding: 20px 30px;
+    border-radius: 10px;
+    max-width: 600px; /* Limit the width of the box */
+    color: #F0A500;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: left; /* Ensure text is left-aligned */
+}
+
+
+
+.quote-box .hashtag {
+    font-weight: bold;
+    color: #FFD700;
+}
+
+/* Icon Box Styling */
+.icon-box {
+    display: flex;
+    gap: 20px; /* Space between buttons */
+    position: absolute; /* Allows precise placement */
+    bottom: 20px; /* Positions the box at the bottom of the page */
+    left: 150px; /* Indent 150px from the left */
+}
+
+/* Icon Button Styling */
+.icon-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%; /* Makes the button circular */
+    text-decoration: none; /* Removes underline */
+    transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.icon-button:hover {
+    transform: scale(1.2); /* Slightly enlarges the button on hover */
+    background-color: #FFD700; /* Bright yellow hover effect */
+    border-color: #FFD700; /* Border matches hover color */
+}
+
+/* Icon Styling */
+.icon {
+    width: 50px; /* Icon size */
+    height: 50px;
+    object-fit: contain;
+    border-radius: 100%;
+    transition: transform 0.3s ease;
+}
+
+.icon-button:hover .icon {
+    transform: scale(1.1); /* Slight hover scaling for the icon */
+}
+
+
+
+/* New Section Styling */
+.new-section {
+    height: 1080px;
+    width: 100%;
+    background: url('./image.png') no-repeat center center / cover; /* Replace with your image */
+    position: relative; /* Allows precise positioning for child elements */
+    color: #F0A500;
+}
+
+
+/* STLK Container Styling */
+.stlk-container {
+    width: 100%;
+    padding: 50px 150px; /* Adds padding around the container */
+    background-color: #181512; /* Matches the theme */
+    color: #FFFFFF; /* Orange text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Title Styling */
+.stlk-title {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Subtle shadow */
+}
+
+/* Content Layout */
+.stlk-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px; /* Limit content width */
+    gap: 50px; /* Space between image and text */
+}
+
+/* Image Styling */
+.stlk-image {
+    width: 530px;
+    height: 350px;
+    object-fit: cover; /* Ensures the image fills its dimensions */
+    border-radius: 10px; /* Adds slight rounding to the edges */
+}
+
+/* Text Styling */
+.stlk-text {
+    flex: 1; /* Ensures the text fills available space */
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify; /* Aligns text evenly for a cleaner look */
+}
+
+
+/* Wall of Meme Container Styling */
+.wall-of-meme {
+    width: 100%;
+    padding: 50px 0; /* Padding for spacing */
+    background-color: #FFFFFF; /* Slightly darker background */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    color: #0D2122; /* Orange text color */
+}
+
+/* Title Styling */
+.meme-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 50px; /* Spacing below the title */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Subtle shadow */
+}
+
+/* Meme Images Container */
+.meme-images {
+    display: flex;
+    flex-direction: column; /* Align images vertically */
+    align-items: center; /* Center the images horizontally */
+    gap: 20px; /* Space between images */
+}
+
+/* Individual Meme Image Styling */
+.meme-image {
+    width: 770px; /* Fixed width */
+    height: 470px; /* Fixed height */
+    object-fit: cover; /* Ensure the images fill the space properly */
+    border-radius: 10px; /* Rounded corners for aesthetic */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Adds depth with shadow */
+}
